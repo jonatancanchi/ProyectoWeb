@@ -1,0 +1,294 @@
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+
+/*-------MENU DE NAVEGACION-----------------------------*/
+.navbar
+{
+    display: flex;
+    flex-flow: row nowrap;
+    cursor: pointer;
+    height: 75px;
+    background: rgba(0,0,0,.2);
+    border-bottom: 0.8px solid #343533;
+}
+
+.bg-color
+{
+    background-color: white;
+}
+#navbarNavDropdown
+{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+/*-------------CARRUSEL--------------------------------------*/
+
+.carousel-inner img
+    {
+      width: 100%;
+      height: 100%;
+    }
+
+/*---------SECCIÓN INICIO-PORTADA PRODUCTOS----------------*/
+.grid-container
+{
+    display: grid;
+    grid-gap:10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.col
+{
+    margin:10px;
+    width: 200%;
+    height: auto;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+.col:hover
+{
+    -webkit-transform: scale(1,1);
+    -webkit-transition: ease-out;
+    -webkit-transition-duration: 100ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 100ms;
+}
+h1
+{
+    font-size: 55px;
+    text-align: center;
+}
+p
+{
+    font-size: 25px;
+}
+
+/*---------SECCIÓN PRODUCTOS--------------------------------*/
+.contenedor
+{ 
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    margin: auto;
+    width: 1040px;
+}
+.galeria
+{
+    text-align: center;
+}
+img
+{
+    width: 100%;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+img:hover
+{
+    -webkit-transform: scale(1.1,1.1);
+    -webkit-transition: ease-out;
+    -webkit-transition-duration: 100ms;
+    -moz-transform: scale(1.1,1.1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 100ms;
+}
+.columna
+{
+    margin: 15px; 
+}
+
+/*-------------Titulos Galeria Productos--------------------------*/
+h5{
+    font-size: 30px;
+    color: #000;
+    justify-content: center;
+    margin-top: 180px;
+    margin-bottom:15px;
+}
+h3 /*PRECIOS*/
+{
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/*-------------SECCIÓN CONTACTO - FORMULARIO-------------------------*/
+.formulario-contacto
+{
+   display: flex;
+   width: 100%;
+   height: 80vh;
+   justify-content: center;
+   align-items: center;
+   padding-top: 150px;
+}
+
+.form2
+{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    padding: 17px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 50px;
+    border-radius: 15px;
+}
+input, textarea
+{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px 0px;
+    width: 80%;
+    margin: 20px;
+    transition: all 300ms;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+/*boton enviar mensaje*/
+button
+{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 150px;
+    margin: 15px 0px;
+    color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.3) 0px 0px 7px;
+    background: rgba(0,0,0,1);
+    cursor: pointer;
+    transition: all 300ms;
+    font-size: 12px;
+}
+button:hover
+{
+    transform: scale(1.05);
+    box-shadow: rgba(0,0,0,0.9) 0px 0px 10px;
+    color:#a6a9b6;
+}
+
+/*boton enviar mensaje*/
+button
+{
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 150px;
+    margin: 20px 0px;
+    color: white;
+    border-radius: 2px;
+    box-shadow: rgba(0,0,0,0.7) 0px 0px 10px;
+    background: rgba(0,0,0,1);
+    cursor: pointer;
+    transition: all 300ms;
+}
+button:hover
+{
+    transform: scale(1.05);
+    box-shadow: rgba(0,0,0,0.9) 0px 0px 10px;
+    color:#ffe05d;
+}
+
+/*-------------FOOTER-------------------------------*/
+.container-footer 
+{ 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    background-color: #ebebeb;  
+}
+.footer-pie
+{
+    text-align: center;
+    padding-bottom: 100px;
+ 
+}  
+.footer-pie a
+{
+    color:black;
+    font-size: 13px;
+    padding: 0 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+}
+.footer-pie a:hover
+{
+    color: #a6a9b6;
+}
+
+
+/*----------------------------------------------------------------*/
+
+/* SECCIÓN NOSOTROS y KIDS - Pronto tendra contenido*/
+.container-cartel
+{
+   display: flex; 
+   width: 100%;
+   height: 50vh;
+   justify-content: center;
+   align-items: center;
+   padding-top: 100px;
+   margin-top: 20px;
+   margin-bottom: 150px;
+}
+.cartel2
+{
+    display: flex;
+    flex-flow: column;
+    background-color:black;
+    width: 40%;
+    height: 100px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 50px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+h2
+{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+p
+{
+    text-align: center;
+    font-size: 18px;
+}
